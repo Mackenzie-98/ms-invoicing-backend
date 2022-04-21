@@ -1,0 +1,23 @@
+jasypt:
+   encryptor:
+      password: ${jasyptpwd:secretkey}
+      algorithm: PBEWithMD5AndDES
+
+server:
+   port: 
+   servlet:
+      context-path: /
+      session:
+         timeout: 21600s
+
+spring:
+   datasource:
+      driver-class-name: org.h2.Driver
+#      driver-class-name: org.postgresql.Driver
+      type: com.zaxxer.hikari.HikariDataSource
+#      jdbcUrl: jdbc:postgresql://localhost:5432/postgres?currentSchema=invoicing-schema
+      jdbcUrl: jdbc:h2:mem:invoicing
+      username: postgres
+      password: ed1234
+      hikari:
+         poolName: SpringBootJPAHikariCP
