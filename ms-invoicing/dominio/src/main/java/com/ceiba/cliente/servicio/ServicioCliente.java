@@ -1,6 +1,6 @@
 package com.ceiba.cliente.servicio;
 
-import com.ceiba.cliente.modelo.dto.DtoCliente;
+import com.ceiba.cliente.modelo.entities.Cliente;
 import com.ceiba.cliente.puerto.dao.iDaoCliente;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -18,19 +18,19 @@ public class ServicioCliente {
     @Autowired
     private iDaoCliente daoCliente;
 
-    public ResponseEntity<DtoCliente> registrarCliente(DtoCliente cliente){
+    public ResponseEntity<Cliente> registrarCliente(Cliente cliente){
         return new ResponseEntity(daoCliente.registrar(cliente), HttpStatus.OK);
     }
 
-    public ResponseEntity<DtoCliente> buscarClientePorId(String identificacion){
-        Optional<DtoCliente> busqueda = daoCliente.buscarPorId(identificacion);
+    public ResponseEntity<Cliente> buscarClientePorId(String identificacion){
+        Optional<Cliente> busqueda = daoCliente.buscarPorId(identificacion);
         if(busqueda.isPresent())
             return new ResponseEntity(busqueda.get(),HttpStatus.OK);
         else
             return new ResponseEntity(CLIENTE_NO_ENCONTRADO,HttpStatus.NOT_FOUND);
 
     }
-    public ResponseEntity<List<DtoCliente>> listarClientes(){
+    public ResponseEntity<List<Cliente>> listarClientes(){
         return new ResponseEntity(daoCliente.listar(), HttpStatus.OK);
     }
 
@@ -38,10 +38,4 @@ public class ServicioCliente {
         daoCliente.eliminar(identificacion);
         return new ResponseEntity(String.format(CLIENTE_ELIMINADO, identificacion), HttpStatus.OK);
     }
-
-    public ResponseEntity<DtoCliente> actualizarCliente(DtoCliente cliente){
-        return new ResponseEntity(daoCliente.actualizar(cliente), HttpStatus.OK);
-    }
-
-
 }

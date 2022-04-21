@@ -1,6 +1,6 @@
 package com.ceiba.cliente.controlador;
 
-import com.ceiba.cliente.modelo.dto.DtoCliente;
+import com.ceiba.cliente.modelo.entities.Cliente;
 import com.ceiba.cliente.servicio.ServicioCliente;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -20,28 +20,25 @@ public class ControladorCliente {
 
     @PostMapping("/registrar")
     @ApiOperation("Registrar cliente")
-    public ResponseEntity<DtoCliente> registrar(@RequestBody DtoCliente cliente){
+    public ResponseEntity<Cliente> registrar(@RequestBody Cliente cliente){
         return servicioCliente.registrarCliente(cliente);
     }
 
     @GetMapping("buscar/{id}")
+    @ApiOperation("Buscar cliente por id")
     public ResponseEntity buscar(@PathVariable String id){
         return servicioCliente.buscarClientePorId(id);
     }
 
     @DeleteMapping("eliminar/{id}")
+    @ApiOperation("Eliminar cliente por id")
     public ResponseEntity<String> eliminar(@PathVariable String id){
         return servicioCliente.eliminarCliente(id);
     }
 
     @GetMapping("/listar")
-    public ResponseEntity<List<DtoCliente>> listar(){
+    @ApiOperation("Listar todos los clientes")
+    public ResponseEntity<List<Cliente>> listar(){
         return servicioCliente.listarClientes();
     }
-
-    @PutMapping("/editar")
-    public ResponseEntity<DtoCliente> editar(@RequestBody DtoCliente cliente){
-        return servicioCliente.actualizarCliente(cliente);
-    }
-
 }

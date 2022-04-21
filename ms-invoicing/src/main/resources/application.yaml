@@ -17,7 +17,7 @@ spring:
       type: com.zaxxer.hikari.HikariDataSource
 #      jdbcUrl: jdbc:postgresql://localhost:5432/postgres?currentSchema=invoicing-schema
       jdbcUrl: jdbc:h2:mem:invoicing
-      username: postgres
-      password: ed1234
+      username: sa
+      password:
       hikari:
          poolName: SpringBootJPAHikariCP

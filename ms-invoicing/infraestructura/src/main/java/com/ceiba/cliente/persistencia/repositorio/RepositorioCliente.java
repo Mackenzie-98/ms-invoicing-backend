@@ -1,6 +1,6 @@
-package com.ceiba.cliente.adaptador.repositorio;
+package com.ceiba.cliente.persistencia.repositorio;
 
-import com.ceiba.cliente.modelo.dto.DtoCliente;
+import com.ceiba.cliente.modelo.entities.Cliente;
 import com.ceiba.cliente.puerto.dao.iDaoCliente;
 import com.ceiba.cliente.puerto.repositorio.iRepositorioCliente;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,21 +17,13 @@ public class RepositorioCliente implements iDaoCliente {
 
 
     @Override
-    public DtoCliente registrar(DtoCliente cliente) {
+    public Cliente registrar(Cliente cliente) {
         return repositorioCliente.save(cliente);
     }
 
     @Override
-    public Optional<DtoCliente> buscarPorId(String identificacion) {
+    public Optional<Cliente> buscarPorId(String identificacion) {
         return repositorioCliente.findById(identificacion);
-    }
-
-    @Override
-    public DtoCliente actualizar(DtoCliente nuevoCliente) {
-        if(repositorioCliente.existsById(nuevoCliente.getIdentificacion())){
-            repositorioCliente.deleteById(nuevoCliente.getIdentificacion());
-        }
-        return repositorioCliente.save(nuevoCliente);
     }
 
     @Override
@@ -40,7 +32,7 @@ public class RepositorioCliente implements iDaoCliente {
     }
 
     @Override
-    public List<DtoCliente> listar() {
+    public List<Cliente> listar() {
         return repositorioCliente.listar();
     }
 }

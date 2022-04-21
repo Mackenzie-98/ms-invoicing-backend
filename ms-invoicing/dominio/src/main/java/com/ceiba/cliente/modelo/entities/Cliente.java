@@ -1,18 +1,17 @@
-package com.ceiba.cliente.modelo.dto;
+package com.ceiba.cliente.modelo.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity(name = "cliente")
-public class DtoCliente {
+public class Cliente {
 
     @Id
     private String identificacion;
@@ -22,4 +21,7 @@ public class DtoCliente {
 
     @Column
     private String apellido;
+
+    @OneToMany(mappedBy = "cliente",cascade = CascadeType.ALL)
+    private List<Factura> facturas;
 }

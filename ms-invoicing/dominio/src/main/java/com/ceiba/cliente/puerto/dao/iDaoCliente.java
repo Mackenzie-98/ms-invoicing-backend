@@ -1,20 +1,18 @@
 package com.ceiba.cliente.puerto.dao;
 
-import com.ceiba.cliente.modelo.dto.DtoCliente;
+import com.ceiba.cliente.modelo.entities.Cliente;
 
 import java.util.List;
 import java.util.Optional;
 
 public interface iDaoCliente {
 
-    DtoCliente registrar(DtoCliente cliente);
+    Cliente registrar(Cliente cliente);
 
-    Optional<DtoCliente> buscarPorId(String identificacion);
-
-    DtoCliente actualizar(DtoCliente nuevoCliente);
+    Optional<Cliente> buscarPorId(String identificacion);
 
     void eliminar(String identificacion);
 
-    List<DtoCliente> listar();
+    List<Cliente> listar();
 
 }

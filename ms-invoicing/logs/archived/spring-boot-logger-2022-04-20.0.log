@@ -1019,10 +1019,10 @@ Update your application's configuration
 2022-04-20 16:57:57,035 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
 2022-04-20 16:57:57,314 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
 2022-04-20 16:57:57,539 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2022-04-20 16:57:57,955 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.ceiba.cliente.modelo.dto.DtoCliente (class must be instantiated by Interceptor)
+2022-04-20 16:57:57,955 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.ceiba.cliente.modelo.entities.Cliente (class must be instantiated by Interceptor)
 2022-04-20 16:57:58,324 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 2022-04-20 16:57:58,336 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-04-20 16:57:58,345 INFO org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor [restartedMain] Autowired annotation is not supported on static fields: private static com.ceiba.cliente.puerto.repositorio.iRepositorioCliente com.ceiba.cliente.adaptador.repositorio.RepositorioCliente.repositorioCliente
+2022-04-20 16:57:58,345 INFO org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor [restartedMain] Autowired annotation is not supported on static fields: private static com.ceiba.cliente.puerto.repositorio.iRepositorioCliente RepositorioCliente.repositorioCliente
 2022-04-20 16:57:58,355 INFO org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor [restartedMain] Autowired annotation is not supported on static fields: private static com.ceiba.cliente.puerto.dao.iDaoCliente com.ceiba.cliente.servicio.ServicioCliente.daoCliente
 2022-04-20 16:57:58,676 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2022-04-20 16:57:58,909 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
@@ -1239,10 +1239,10 @@ Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: unexpected token
 2022-04-20 16:59:46,097 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
 2022-04-20 16:59:46,250 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
 2022-04-20 16:59:46,382 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2022-04-20 16:59:46,684 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.ceiba.cliente.modelo.dto.DtoCliente (class must be instantiated by Interceptor)
+2022-04-20 16:59:46,684 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.ceiba.cliente.modelo.entities.Cliente (class must be instantiated by Interceptor)
 2022-04-20 16:59:46,874 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 2022-04-20 16:59:46,882 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-04-20 16:59:46,889 INFO org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor [restartedMain] Autowired annotation is not supported on static fields: private static com.ceiba.cliente.puerto.repositorio.iRepositorioCliente com.ceiba.cliente.adaptador.repositorio.RepositorioCliente.repositorioCliente
+2022-04-20 16:59:46,889 INFO org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor [restartedMain] Autowired annotation is not supported on static fields: private static com.ceiba.cliente.puerto.repositorio.iRepositorioCliente RepositorioCliente.repositorioCliente
 2022-04-20 16:59:46,895 INFO org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor [restartedMain] Autowired annotation is not supported on static fields: private static com.ceiba.cliente.puerto.dao.iDaoCliente com.ceiba.cliente.servicio.ServicioCliente.daoCliente
 2022-04-20 16:59:47,134 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2022-04-20 16:59:47,365 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
@@ -1302,10 +1302,10 @@ Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: unexpected token
 2022-04-20 17:01:15,983 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
 2022-04-20 17:01:16,223 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
 2022-04-20 17:01:16,438 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2022-04-20 17:01:16,950 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.ceiba.cliente.modelo.dto.DtoCliente (class must be instantiated by Interceptor)
+2022-04-20 17:01:16,950 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.ceiba.cliente.modelo.entities.Cliente (class must be instantiated by Interceptor)
 2022-04-20 17:01:17,268 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 2022-04-20 17:01:17,279 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-04-20 17:01:17,290 INFO org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor [restartedMain] Autowired annotation is not supported on static fields: private static com.ceiba.cliente.puerto.repositorio.iRepositorioCliente com.ceiba.cliente.adaptador.repositorio.RepositorioCliente.repositorioCliente
+2022-04-20 17:01:17,290 INFO org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor [restartedMain] Autowired annotation is not supported on static fields: private static com.ceiba.cliente.puerto.repositorio.iRepositorioCliente RepositorioCliente.repositorioCliente
 2022-04-20 17:01:17,303 INFO org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor [restartedMain] Autowired annotation is not supported on static fields: private static com.ceiba.cliente.puerto.dao.iDaoCliente com.ceiba.cliente.servicio.ServicioCliente.daoCliente
 2022-04-20 17:01:17,626 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2022-04-20 17:01:17,853 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
@@ -1426,10 +1426,10 @@ java.lang.NullPointerException: null
 2022-04-20 17:05:11,680 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
 2022-04-20 17:05:11,822 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
 2022-04-20 17:05:11,938 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2022-04-20 17:05:12,198 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.ceiba.cliente.modelo.dto.DtoCliente (class must be instantiated by Interceptor)
+2022-04-20 17:05:12,198 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.ceiba.cliente.modelo.entities.Cliente (class must be instantiated by Interceptor)
 2022-04-20 17:05:12,395 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 2022-04-20 17:05:12,404 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-04-20 17:05:12,412 INFO org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor [restartedMain] Autowired annotation is not supported on static fields: private static com.ceiba.cliente.puerto.repositorio.iRepositorioCliente com.ceiba.cliente.adaptador.repositorio.RepositorioCliente.repositorioCliente
+2022-04-20 17:05:12,412 INFO org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor [restartedMain] Autowired annotation is not supported on static fields: private static com.ceiba.cliente.puerto.repositorio.iRepositorioCliente RepositorioCliente.repositorioCliente
 2022-04-20 17:05:12,418 INFO org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor [restartedMain] Autowired annotation is not supported on static fields: private static com.ceiba.cliente.puerto.dao.iDaoCliente com.ceiba.cliente.servicio.ServicioCliente.daoCliente
 2022-04-20 17:05:12,622 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2022-04-20 17:05:12,772 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
@@ -1548,10 +1548,10 @@ java.lang.NullPointerException: null
 2022-04-20 17:08:25,571 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
 2022-04-20 17:08:25,699 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
 2022-04-20 17:08:25,807 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2022-04-20 17:08:26,037 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.ceiba.cliente.modelo.dto.DtoCliente (class must be instantiated by Interceptor)
+2022-04-20 17:08:26,037 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.ceiba.cliente.modelo.entities.Cliente (class must be instantiated by Interceptor)
 2022-04-20 17:08:26,242 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 2022-04-20 17:08:26,251 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-04-20 17:08:26,257 INFO org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor [restartedMain] Autowired annotation is not supported on static fields: private static com.ceiba.cliente.puerto.repositorio.iRepositorioCliente com.ceiba.cliente.adaptador.repositorio.RepositorioCliente.repositorioCliente
+2022-04-20 17:08:26,257 INFO org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor [restartedMain] Autowired annotation is not supported on static fields: private static com.ceiba.cliente.puerto.repositorio.iRepositorioCliente RepositorioCliente.repositorioCliente
 2022-04-20 17:08:26,477 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2022-04-20 17:08:26,624 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
 2022-04-20 17:08:26,712 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
@@ -1567,8 +1567,8 @@ java.lang.NullPointerException: null
 2022-04-20 17:08:33,165 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
 2022-04-20 17:08:33,204 ERROR com.ceiba.infraestructura.error.ManejadorError [http-nio-8080-exec-2] NullPointerException
 java.lang.NullPointerException: null
-	at com.ceiba.cliente.adaptador.repositorio.RepositorioCliente.registrar(RepositorioCliente.java:21)
-	at com.ceiba.cliente.adaptador.repositorio.RepositorioCliente$$FastClassBySpringCGLIB$$b5bcc139.invoke(<generated>)
+	at RepositorioCliente.registrar(RepositorioCliente.java:21)
+	at RepositorioCliente$$FastClassBySpringCGLIB$$b5bcc139.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
@@ -1577,7 +1577,7 @@ java.lang.NullPointerException: null
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
-	at com.ceiba.cliente.adaptador.repositorio.RepositorioCliente$$EnhancerBySpringCGLIB$$eb75f123.registrar(<generated>)
+	at RepositorioCliente$$EnhancerBySpringCGLIB$$eb75f123.registrar(<generated>)
 	at com.ceiba.cliente.servicio.ServicioCliente.registrarCliente(ServicioCliente.java:17)
 	at com.ceiba.cliente.controlador.ControladorCliente.registrar(ControladorCliente.java:24)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1680,10 +1680,10 @@ java.lang.NullPointerException: null
 2022-04-20 17:11:52,666 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
 2022-04-20 17:11:52,832 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
 2022-04-20 17:11:52,973 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2022-04-20 17:11:53,303 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.ceiba.cliente.modelo.dto.DtoCliente (class must be instantiated by Interceptor)
+2022-04-20 17:11:53,303 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.ceiba.cliente.modelo.entities.Cliente (class must be instantiated by Interceptor)
 2022-04-20 17:11:53,498 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 2022-04-20 17:11:53,506 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-04-20 17:11:53,513 INFO org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor [restartedMain] Autowired annotation is not supported on static fields: private static com.ceiba.cliente.puerto.repositorio.iRepositorioCliente com.ceiba.cliente.adaptador.repositorio.RepositorioCliente.repositorioCliente
+2022-04-20 17:11:53,513 INFO org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor [restartedMain] Autowired annotation is not supported on static fields: private static com.ceiba.cliente.puerto.repositorio.iRepositorioCliente RepositorioCliente.repositorioCliente
 2022-04-20 17:11:53,748 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2022-04-20 17:11:53,910 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
 2022-04-20 17:11:54,000 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
@@ -1699,8 +1699,8 @@ java.lang.NullPointerException: null
 2022-04-20 17:12:06,302 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
 2022-04-20 17:12:06,339 ERROR com.ceiba.infraestructura.error.ManejadorError [http-nio-8080-exec-1] NullPointerException
 java.lang.NullPointerException: null
-	at com.ceiba.cliente.adaptador.repositorio.RepositorioCliente.registrar(RepositorioCliente.java:21)
-	at com.ceiba.cliente.adaptador.repositorio.RepositorioCliente$$FastClassBySpringCGLIB$$b5bcc139.invoke(<generated>)
+	at RepositorioCliente.registrar(RepositorioCliente.java:21)
+	at RepositorioCliente$$FastClassBySpringCGLIB$$b5bcc139.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
@@ -1709,7 +1709,7 @@ java.lang.NullPointerException: null
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
-	at com.ceiba.cliente.adaptador.repositorio.RepositorioCliente$$EnhancerBySpringCGLIB$$bbb577b6.registrar(<generated>)
+	at RepositorioCliente$$EnhancerBySpringCGLIB$$bbb577b6.registrar(<generated>)
 	at com.ceiba.cliente.servicio.ServicioCliente.registrarCliente(ServicioCliente.java:17)
 	at com.ceiba.cliente.controlador.ControladorCliente.registrar(ControladorCliente.java:24)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1812,10 +1812,10 @@ java.lang.NullPointerException: null
 2022-04-20 17:13:55,478 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
 2022-04-20 17:13:55,609 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
 2022-04-20 17:13:55,736 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2022-04-20 17:13:56,001 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.ceiba.cliente.modelo.dto.DtoCliente (class must be instantiated by Interceptor)
+2022-04-20 17:13:56,001 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.ceiba.cliente.modelo.entities.Cliente (class must be instantiated by Interceptor)
 2022-04-20 17:13:56,214 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 2022-04-20 17:13:56,222 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-04-20 17:13:56,229 INFO org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor [restartedMain] Autowired annotation is not supported on static fields: private static com.ceiba.cliente.puerto.repositorio.iRepositorioCliente com.ceiba.cliente.adaptador.repositorio.RepositorioCliente.repositorioCliente
+2022-04-20 17:13:56,229 INFO org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor [restartedMain] Autowired annotation is not supported on static fields: private static com.ceiba.cliente.puerto.repositorio.iRepositorioCliente RepositorioCliente.repositorioCliente
 2022-04-20 17:13:56,432 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2022-04-20 17:13:56,570 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 1 endpoint(s) beneath base path '/actuator'
 2022-04-20 17:13:56,650 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
@@ -1831,8 +1831,8 @@ java.lang.NullPointerException: null
 2022-04-20 17:14:01,729 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
 2022-04-20 17:14:01,766 ERROR com.ceiba.infraestructura.error.ManejadorError [http-nio-8080-exec-1] NullPointerException
 java.lang.NullPointerException: null
-	at com.ceiba.cliente.adaptador.repositorio.RepositorioCliente.registrar(RepositorioCliente.java:21)
-	at com.ceiba.cliente.adaptador.repositorio.RepositorioCliente$$FastClassBySpringCGLIB$$b5bcc139.invoke(<generated>)
+	at RepositorioCliente.registrar(RepositorioCliente.java:21)
+	at RepositorioCliente$$FastClassBySpringCGLIB$$b5bcc139.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
@@ -1841,7 +1841,7 @@ java.lang.NullPointerException: null
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
-	at com.ceiba.cliente.adaptador.repositorio.RepositorioCliente$$EnhancerBySpringCGLIB$$954b3a23.registrar(<generated>)
+	at RepositorioCliente$$EnhancerBySpringCGLIB$$954b3a23.registrar(<generated>)
 	at com.ceiba.cliente.servicio.ServicioCliente.registrarCliente(ServicioCliente.java:17)
 	at com.ceiba.cliente.controlador.ControladorCliente.registrar(ControladorCliente.java:24)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -1944,7 +1944,7 @@ java.lang.NullPointerException: null
 2022-04-20 17:14:27,258 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
 2022-04-20 17:14:27,421 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
 2022-04-20 17:14:27,606 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2022-04-20 17:14:28,009 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.ceiba.cliente.modelo.dto.DtoCliente (class must be instantiated by Interceptor)
+2022-04-20 17:14:28,009 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.ceiba.cliente.modelo.entities.Cliente (class must be instantiated by Interceptor)
 2022-04-20 17:14:28,362 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 2022-04-20 17:14:28,375 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
 2022-04-20 17:14:29,052 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
@@ -1961,7 +1961,7 @@ java.lang.NullPointerException: null
 2022-04-20 17:14:32,505 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
 2022-04-20 17:14:32,506 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
 2022-04-20 17:14:32,565 ERROR com.ceiba.infraestructura.error.ManejadorError [http-nio-8080-exec-2] JpaSystemException
-org.springframework.orm.jpa.JpaSystemException: ids for this class must be manually assigned before calling save(): com.ceiba.cliente.modelo.dto.DtoCliente; nested exception is org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.ceiba.cliente.modelo.dto.DtoCliente
+org.springframework.orm.jpa.JpaSystemException: ids for this class must be manually assigned before calling save(): com.ceiba.cliente.modelo.entities.Cliente; nested exception is org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.ceiba.cliente.modelo.entities.Cliente
 	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:331)
 	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233)
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551)
@@ -1975,8 +1975,8 @@ org.springframework.orm.jpa.JpaSystemException: ids for this class must be manua
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
 	at com.sun.proxy.$Proxy121.save(Unknown Source)
-	at com.ceiba.cliente.adaptador.repositorio.RepositorioCliente.registrar(RepositorioCliente.java:21)
-	at com.ceiba.cliente.adaptador.repositorio.RepositorioCliente$$FastClassBySpringCGLIB$$b5bcc139.invoke(<generated>)
+	at RepositorioCliente.registrar(RepositorioCliente.java:21)
+	at RepositorioCliente$$FastClassBySpringCGLIB$$b5bcc139.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
@@ -1985,7 +1985,7 @@ org.springframework.orm.jpa.JpaSystemException: ids for this class must be manua
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
-	at com.ceiba.cliente.adaptador.repositorio.RepositorioCliente$$EnhancerBySpringCGLIB$$becd8285.registrar(<generated>)
+	at RepositorioCliente$$EnhancerBySpringCGLIB$$becd8285.registrar(<generated>)
 	at com.ceiba.cliente.servicio.ServicioCliente.registrarCliente(ServicioCliente.java:17)
 	at com.ceiba.cliente.controlador.ControladorCliente.registrar(ControladorCliente.java:24)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -2042,7 +2042,7 @@ org.springframework.orm.jpa.JpaSystemException: ids for this class must be manua
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.ceiba.cliente.modelo.dto.DtoCliente
+Caused by: org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.ceiba.cliente.modelo.entities.Cliente
 	at org.hibernate.id.Assigned.generate(Assigned.java:33)
 	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:115)
 	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:185)
@@ -2084,7 +2084,7 @@ Caused by: org.hibernate.id.IdentifierGenerationException: ids for this class mu
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
 	... 74 common frames omitted
-2022-04-20 17:14:32,598 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-2] Resolved [org.springframework.orm.jpa.JpaSystemException: ids for this class must be manually assigned before calling save(): com.ceiba.cliente.modelo.dto.DtoCliente; nested exception is org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.ceiba.cliente.modelo.dto.DtoCliente]
+2022-04-20 17:14:32,598 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-2] Resolved [org.springframework.orm.jpa.JpaSystemException: ids for this class must be manually assigned before calling save(): com.ceiba.cliente.modelo.entities.Cliente; nested exception is org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.ceiba.cliente.modelo.entities.Cliente]
 2022-04-20 17:18:01,850 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application using Java 11.0.13 on ADRIAN-MELO with PID 17404 (C:\Users\adrian.melo\Documents\Proyectos\java-arquitectura-hexagonal\ms-invoicing-backend\ms-invoicing\build\classes\java\main started by adrian.melo in C:\Users\adrian.melo\Documents\Proyectos\java-arquitectura-hexagonal\ms-invoicing-backend\ms-invoicing)
 2022-04-20 17:18:01,853 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
 2022-04-20 17:18:01,898 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
@@ -2130,7 +2130,7 @@ Caused by: org.hibernate.id.IdentifierGenerationException: ids for this class mu
 2022-04-20 17:18:04,642 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
 2022-04-20 17:18:04,774 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
 2022-04-20 17:18:04,886 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2022-04-20 17:18:05,145 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.ceiba.cliente.modelo.dto.DtoCliente (class must be instantiated by Interceptor)
+2022-04-20 17:18:05,145 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.ceiba.cliente.modelo.entities.Cliente (class must be instantiated by Interceptor)
 2022-04-20 17:18:05,369 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 2022-04-20 17:18:05,378 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
 2022-04-20 17:18:05,854 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
@@ -2147,7 +2147,7 @@ Caused by: org.hibernate.id.IdentifierGenerationException: ids for this class mu
 2022-04-20 17:18:10,392 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
 2022-04-20 17:18:10,394 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
 2022-04-20 17:18:10,454 ERROR com.ceiba.infraestructura.error.ManejadorError [http-nio-8080-exec-2] JpaSystemException
-org.springframework.orm.jpa.JpaSystemException: ids for this class must be manually assigned before calling save(): com.ceiba.cliente.modelo.dto.DtoCliente; nested exception is org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.ceiba.cliente.modelo.dto.DtoCliente
+org.springframework.orm.jpa.JpaSystemException: ids for this class must be manually assigned before calling save(): com.ceiba.cliente.modelo.entities.Cliente; nested exception is org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.ceiba.cliente.modelo.entities.Cliente
 	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:331)
 	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233)
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551)
@@ -2161,8 +2161,8 @@ org.springframework.orm.jpa.JpaSystemException: ids for this class must be manua
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
 	at com.sun.proxy.$Proxy121.save(Unknown Source)
-	at com.ceiba.cliente.adaptador.repositorio.RepositorioCliente.registrar(RepositorioCliente.java:21)
-	at com.ceiba.cliente.adaptador.repositorio.RepositorioCliente$$FastClassBySpringCGLIB$$b5bcc139.invoke(<generated>)
+	at RepositorioCliente.registrar(RepositorioCliente.java:21)
+	at RepositorioCliente$$FastClassBySpringCGLIB$$b5bcc139.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
@@ -2171,7 +2171,7 @@ org.springframework.orm.jpa.JpaSystemException: ids for this class must be manua
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
-	at com.ceiba.cliente.adaptador.repositorio.RepositorioCliente$$EnhancerBySpringCGLIB$$29813778.registrar(<generated>)
+	at RepositorioCliente$$EnhancerBySpringCGLIB$$29813778.registrar(<generated>)
 	at com.ceiba.cliente.servicio.ServicioCliente.registrarCliente(ServicioCliente.java:17)
 	at com.ceiba.cliente.controlador.ControladorCliente.registrar(ControladorCliente.java:24)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -2228,7 +2228,7 @@ org.springframework.orm.jpa.JpaSystemException: ids for this class must be manua
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.ceiba.cliente.modelo.dto.DtoCliente
+Caused by: org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.ceiba.cliente.modelo.entities.Cliente
 	at org.hibernate.id.Assigned.generate(Assigned.java:33)
 	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:115)
 	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:185)
@@ -2270,7 +2270,7 @@ Caused by: org.hibernate.id.IdentifierGenerationException: ids for this class mu
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
 	... 74 common frames omitted
-2022-04-20 17:18:10,488 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-2] Resolved [org.springframework.orm.jpa.JpaSystemException: ids for this class must be manually assigned before calling save(): com.ceiba.cliente.modelo.dto.DtoCliente; nested exception is org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.ceiba.cliente.modelo.dto.DtoCliente]
+2022-04-20 17:18:10,488 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-2] Resolved [org.springframework.orm.jpa.JpaSystemException: ids for this class must be manually assigned before calling save(): com.ceiba.cliente.modelo.entities.Cliente; nested exception is org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.ceiba.cliente.modelo.entities.Cliente]
 2022-04-20 17:18:59,201 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application using Java 11.0.13 on ADRIAN-MELO with PID 15048 (C:\Users\adrian.melo\Documents\Proyectos\java-arquitectura-hexagonal\ms-invoicing-backend\ms-invoicing\build\classes\java\main started by adrian.melo in C:\Users\adrian.melo\Documents\Proyectos\java-arquitectura-hexagonal\ms-invoicing-backend\ms-invoicing)
 2022-04-20 17:18:59,204 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
 2022-04-20 17:18:59,252 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
@@ -2316,7 +2316,7 @@ Caused by: org.hibernate.id.IdentifierGenerationException: ids for this class mu
 2022-04-20 17:19:01,920 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
 2022-04-20 17:19:02,061 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
 2022-04-20 17:19:02,180 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2022-04-20 17:19:02,449 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.ceiba.cliente.modelo.dto.DtoCliente (class must be instantiated by Interceptor)
+2022-04-20 17:19:02,449 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.ceiba.cliente.modelo.entities.Cliente (class must be instantiated by Interceptor)
 2022-04-20 17:19:02,676 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 2022-04-20 17:19:02,684 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
 2022-04-20 17:19:03,226 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
@@ -2350,8 +2350,8 @@ org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepa
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
 	at com.sun.proxy.$Proxy122.save(Unknown Source)
-	at com.ceiba.cliente.adaptador.repositorio.RepositorioCliente.registrar(RepositorioCliente.java:21)
-	at com.ceiba.cliente.adaptador.repositorio.RepositorioCliente$$FastClassBySpringCGLIB$$b5bcc139.invoke(<generated>)
+	at RepositorioCliente.registrar(RepositorioCliente.java:21)
+	at RepositorioCliente$$FastClassBySpringCGLIB$$b5bcc139.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
@@ -2360,7 +2360,7 @@ org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepa
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
-	at com.ceiba.cliente.adaptador.repositorio.RepositorioCliente$$EnhancerBySpringCGLIB$$f60ae77a.registrar(<generated>)
+	at RepositorioCliente$$EnhancerBySpringCGLIB$$f60ae77a.registrar(<generated>)
 	at com.ceiba.cliente.servicio.ServicioCliente.registrarCliente(ServicioCliente.java:17)
 	at com.ceiba.cliente.controlador.ControladorCliente.registrar(ControladorCliente.java:24)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -2541,7 +2541,7 @@ call next value for hibernate_sequence [90036-200]
 2022-04-20 17:21:42,070 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
 2022-04-20 17:21:42,227 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
 2022-04-20 17:21:42,348 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2022-04-20 17:21:42,635 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.ceiba.cliente.modelo.dto.DtoCliente (class must be instantiated by Interceptor)
+2022-04-20 17:21:42,635 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.ceiba.cliente.modelo.entities.Cliente (class must be instantiated by Interceptor)
 2022-04-20 17:21:42,883 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 2022-04-20 17:21:42,893 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
 2022-04-20 17:21:43,357 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
@@ -2575,8 +2575,8 @@ org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepa
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
 	at com.sun.proxy.$Proxy122.save(Unknown Source)
-	at com.ceiba.cliente.adaptador.repositorio.RepositorioCliente.registrar(RepositorioCliente.java:21)
-	at com.ceiba.cliente.adaptador.repositorio.RepositorioCliente$$FastClassBySpringCGLIB$$b5bcc139.invoke(<generated>)
+	at RepositorioCliente.registrar(RepositorioCliente.java:21)
+	at RepositorioCliente$$FastClassBySpringCGLIB$$b5bcc139.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
@@ -2585,7 +2585,7 @@ org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepa
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
-	at com.ceiba.cliente.adaptador.repositorio.RepositorioCliente$$EnhancerBySpringCGLIB$$2e05d4c7.registrar(<generated>)
+	at RepositorioCliente$$EnhancerBySpringCGLIB$$2e05d4c7.registrar(<generated>)
 	at com.ceiba.cliente.servicio.ServicioCliente.registrarCliente(ServicioCliente.java:17)
 	at com.ceiba.cliente.controlador.ControladorCliente.registrar(ControladorCliente.java:24)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -2785,7 +2785,7 @@ APPLICATION FAILED TO START
 
 Description:
 
-Field repositorioCliente in com.ceiba.cliente.adaptador.repositorio.RepositorioCliente required a bean of type 'com.ceiba.cliente.puerto.repositorio.iRepositorioCliente' that could not be found.
+Field repositorioCliente in RepositorioCliente required a bean of type 'com.ceiba.cliente.puerto.repositorio.iRepositorioCliente' that could not be found.
 
 The injection point has the following annotations:
 	- @org.springframework.beans.factory.annotation.Autowired(required=true)
@@ -2840,7 +2840,7 @@ Consider defining a bean of type 'com.ceiba.cliente.puerto.repositorio.iReposito
 2022-04-20 17:24:50,487 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
 2022-04-20 17:24:50,616 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
 2022-04-20 17:24:50,735 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2022-04-20 17:24:50,987 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.ceiba.cliente.modelo.dto.DtoCliente (class must be instantiated by Interceptor)
+2022-04-20 17:24:50,987 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.ceiba.cliente.modelo.entities.Cliente (class must be instantiated by Interceptor)
 2022-04-20 17:24:51,212 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 2022-04-20 17:24:51,221 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
 2022-04-20 17:24:51,641 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
@@ -2857,7 +2857,7 @@ Consider defining a bean of type 'com.ceiba.cliente.puerto.repositorio.iReposito
 2022-04-20 17:24:57,082 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
 2022-04-20 17:24:57,084 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
 2022-04-20 17:24:57,145 ERROR com.ceiba.infraestructura.error.ManejadorError [http-nio-8080-exec-1] JpaSystemException
-org.springframework.orm.jpa.JpaSystemException: ids for this class must be manually assigned before calling save(): com.ceiba.cliente.modelo.dto.DtoCliente; nested exception is org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.ceiba.cliente.modelo.dto.DtoCliente
+org.springframework.orm.jpa.JpaSystemException: ids for this class must be manually assigned before calling save(): com.ceiba.cliente.modelo.entities.Cliente; nested exception is org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.ceiba.cliente.modelo.entities.Cliente
 	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:331)
 	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233)
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551)
@@ -2871,8 +2871,8 @@ org.springframework.orm.jpa.JpaSystemException: ids for this class must be manua
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
 	at com.sun.proxy.$Proxy121.save(Unknown Source)
-	at com.ceiba.cliente.adaptador.repositorio.RepositorioCliente.registrar(RepositorioCliente.java:21)
-	at com.ceiba.cliente.adaptador.repositorio.RepositorioCliente$$FastClassBySpringCGLIB$$b5bcc139.invoke(<generated>)
+	at RepositorioCliente.registrar(RepositorioCliente.java:21)
+	at RepositorioCliente$$FastClassBySpringCGLIB$$b5bcc139.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
@@ -2881,7 +2881,7 @@ org.springframework.orm.jpa.JpaSystemException: ids for this class must be manua
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
-	at com.ceiba.cliente.adaptador.repositorio.RepositorioCliente$$EnhancerBySpringCGLIB$$3afa1046.registrar(<generated>)
+	at RepositorioCliente$$EnhancerBySpringCGLIB$$3afa1046.registrar(<generated>)
 	at com.ceiba.cliente.servicio.ServicioCliente.registrarCliente(ServicioCliente.java:17)
 	at com.ceiba.cliente.controlador.ControladorCliente.registrar(ControladorCliente.java:24)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -2938,7 +2938,7 @@ org.springframework.orm.jpa.JpaSystemException: ids for this class must be manua
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.ceiba.cliente.modelo.dto.DtoCliente
+Caused by: org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.ceiba.cliente.modelo.entities.Cliente
 	at org.hibernate.id.Assigned.generate(Assigned.java:33)
 	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:115)
 	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:185)
@@ -2980,7 +2980,7 @@ Caused by: org.hibernate.id.IdentifierGenerationException: ids for this class mu
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
 	... 74 common frames omitted
-2022-04-20 17:24:57,183 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-1] Resolved [org.springframework.orm.jpa.JpaSystemException: ids for this class must be manually assigned before calling save(): com.ceiba.cliente.modelo.dto.DtoCliente; nested exception is org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.ceiba.cliente.modelo.dto.DtoCliente]
+2022-04-20 17:24:57,183 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-1] Resolved [org.springframework.orm.jpa.JpaSystemException: ids for this class must be manually assigned before calling save(): com.ceiba.cliente.modelo.entities.Cliente; nested exception is org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.ceiba.cliente.modelo.entities.Cliente]
 2022-04-20 17:28:13,338 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application using Java 11.0.13 on ADRIAN-MELO with PID 1484 (C:\Users\adrian.melo\Documents\Proyectos\java-arquitectura-hexagonal\ms-invoicing-backend\ms-invoicing\build\classes\java\main started by adrian.melo in C:\Users\adrian.melo\Documents\Proyectos\java-arquitectura-hexagonal\ms-invoicing-backend\ms-invoicing)
 2022-04-20 17:28:13,342 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
 2022-04-20 17:28:13,397 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
@@ -3026,7 +3026,7 @@ Caused by: org.hibernate.id.IdentifierGenerationException: ids for this class mu
 2022-04-20 17:28:16,388 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
 2022-04-20 17:28:16,537 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
 2022-04-20 17:28:16,662 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2022-04-20 17:28:16,934 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.ceiba.cliente.modelo.dto.DtoCliente (class must be instantiated by Interceptor)
+2022-04-20 17:28:16,934 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.ceiba.cliente.modelo.entities.Cliente (class must be instantiated by Interceptor)
 2022-04-20 17:28:17,127 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 2022-04-20 17:28:17,133 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
 2022-04-20 17:28:17,568 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
@@ -3043,7 +3043,7 @@ Caused by: org.hibernate.id.IdentifierGenerationException: ids for this class mu
 2022-04-20 17:28:21,393 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
 2022-04-20 17:28:21,395 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
 2022-04-20 17:28:21,457 ERROR com.ceiba.infraestructura.error.ManejadorError [http-nio-8080-exec-2] HttpMessageConversionException
-org.springframework.http.converter.HttpMessageConversionException: Type definition error: [simple type, class com.ceiba.cliente.modelo.dto.DtoCliente]; nested exception is com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `com.ceiba.cliente.modelo.dto.DtoCliente` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+org.springframework.http.converter.HttpMessageConversionException: Type definition error: [simple type, class com.ceiba.cliente.modelo.entities.Cliente]; nested exception is com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `com.ceiba.cliente.modelo.entities.Cliente` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
  at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 2, column: 5]
 	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:388)
 	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:343)
@@ -3101,7 +3101,7 @@ org.springframework.http.converter.HttpMessageConversionException: Type definiti
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `com.ceiba.cliente.modelo.dto.DtoCliente` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `com.ceiba.cliente.modelo.entities.Cliente` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
  at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 2, column: 5]
 	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:67)
 	at com.fasterxml.jackson.databind.DeserializationContext.reportBadDefinition(DeserializationContext.java:1764)
@@ -3115,7 +3115,7 @@ Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot
 	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3601)
 	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:380)
 	... 55 common frames omitted
-2022-04-20 17:28:21,477 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-2] Resolved [org.springframework.http.converter.HttpMessageConversionException: Type definition error: [simple type, class com.ceiba.cliente.modelo.dto.DtoCliente]; nested exception is com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `com.ceiba.cliente.modelo.dto.DtoCliente` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+2022-04-20 17:28:21,477 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-2] Resolved [org.springframework.http.converter.HttpMessageConversionException: Type definition error: [simple type, class com.ceiba.cliente.modelo.entities.Cliente]; nested exception is com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `com.ceiba.cliente.modelo.entities.Cliente` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
  at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 2, column: 5]]
 2022-04-20 17:29:24,502 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application using Java 11.0.13 on ADRIAN-MELO with PID 16372 (C:\Users\adrian.melo\Documents\Proyectos\java-arquitectura-hexagonal\ms-invoicing-backend\ms-invoicing\build\classes\java\main started by adrian.melo in C:\Users\adrian.melo\Documents\Proyectos\java-arquitectura-hexagonal\ms-invoicing-backend\ms-invoicing)
 2022-04-20 17:29:24,505 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
@@ -3162,7 +3162,7 @@ Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot
 2022-04-20 17:29:27,225 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
 2022-04-20 17:29:27,362 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
 2022-04-20 17:29:27,487 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2022-04-20 17:29:27,748 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.ceiba.cliente.modelo.dto.DtoCliente (class must be instantiated by Interceptor)
+2022-04-20 17:29:27,748 INFO org.hibernate.tuple.PojoInstantiator [restartedMain] HHH000182: No default (no-argument) constructor for class: com.ceiba.cliente.modelo.entities.Cliente (class must be instantiated by Interceptor)
 2022-04-20 17:29:27,973 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
 2022-04-20 17:29:27,982 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
 2022-04-20 17:29:28,430 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
@@ -3179,7 +3179,7 @@ Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot
 2022-04-20 17:29:31,531 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
 2022-04-20 17:29:31,534 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
 2022-04-20 17:29:31,591 ERROR com.ceiba.infraestructura.error.ManejadorError [http-nio-8080-exec-1] HttpMessageConversionException
-org.springframework.http.converter.HttpMessageConversionException: Type definition error: [simple type, class com.ceiba.cliente.modelo.dto.DtoCliente]; nested exception is com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `com.ceiba.cliente.modelo.dto.DtoCliente` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+org.springframework.http.converter.HttpMessageConversionException: Type definition error: [simple type, class com.ceiba.cliente.modelo.entities.Cliente]; nested exception is com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `com.ceiba.cliente.modelo.entities.Cliente` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
  at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 2, column: 5]
 	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:388)
 	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:343)
@@ -3237,7 +3237,7 @@ org.springframework.http.converter.HttpMessageConversionException: Type definiti
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `com.ceiba.cliente.modelo.dto.DtoCliente` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `com.ceiba.cliente.modelo.entities.Cliente` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
  at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 2, column: 5]
 	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:67)
 	at com.fasterxml.jackson.databind.DeserializationContext.reportBadDefinition(DeserializationContext.java:1764)
@@ -3251,7 +3251,7 @@ Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot
 	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3601)
 	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:380)
 	... 55 common frames omitted
-2022-04-20 17:29:31,610 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-1] Resolved [org.springframework.http.converter.HttpMessageConversionException: Type definition error: [simple type, class com.ceiba.cliente.modelo.dto.DtoCliente]; nested exception is com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `com.ceiba.cliente.modelo.dto.DtoCliente` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
+2022-04-20 17:29:31,610 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-1] Resolved [org.springframework.http.converter.HttpMessageConversionException: Type definition error: [simple type, class com.ceiba.cliente.modelo.entities.Cliente]; nested exception is com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct instance of `com.ceiba.cliente.modelo.entities.Cliente` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)
  at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 2, column: 5]]
 2022-04-20 17:29:52,708 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application using Java 11.0.13 on ADRIAN-MELO with PID 10124 (C:\Users\adrian.melo\Documents\Proyectos\java-arquitectura-hexagonal\ms-invoicing-backend\ms-invoicing\build\classes\java\main started by adrian.melo in C:\Users\adrian.melo\Documents\Proyectos\java-arquitectura-hexagonal\ms-invoicing-backend\ms-invoicing)
 2022-04-20 17:29:52,711 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
@@ -3454,8 +3454,8 @@ org.hibernate.exception.SQLGrammarException: could not prepare statement
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
 	at com.sun.proxy.$Proxy121.save(Unknown Source)
-	at com.ceiba.cliente.adaptador.repositorio.RepositorioCliente.registrar(RepositorioCliente.java:21)
-	at com.ceiba.cliente.adaptador.repositorio.RepositorioCliente$$FastClassBySpringCGLIB$$b5bcc139.invoke(<generated>)
+	at RepositorioCliente.registrar(RepositorioCliente.java:21)
+	at RepositorioCliente$$FastClassBySpringCGLIB$$b5bcc139.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
@@ -3464,7 +3464,7 @@ org.hibernate.exception.SQLGrammarException: could not prepare statement
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
-	at com.ceiba.cliente.adaptador.repositorio.RepositorioCliente$$EnhancerBySpringCGLIB$$f60ae77a.registrar(<generated>)
+	at RepositorioCliente$$EnhancerBySpringCGLIB$$f60ae77a.registrar(<generated>)
 	at com.ceiba.cliente.servicio.ServicioCliente.registrarCliente(ServicioCliente.java:17)
 	at com.ceiba.cliente.controlador.ControladorCliente.registrar(ControladorCliente.java:25)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -3563,8 +3563,8 @@ org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepa
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
 	at com.sun.proxy.$Proxy121.save(Unknown Source)
-	at com.ceiba.cliente.adaptador.repositorio.RepositorioCliente.registrar(RepositorioCliente.java:21)
-	at com.ceiba.cliente.adaptador.repositorio.RepositorioCliente$$FastClassBySpringCGLIB$$b5bcc139.invoke(<generated>)
+	at RepositorioCliente.registrar(RepositorioCliente.java:21)
+	at RepositorioCliente$$FastClassBySpringCGLIB$$b5bcc139.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
@@ -3573,7 +3573,7 @@ org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepa
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
-	at com.ceiba.cliente.adaptador.repositorio.RepositorioCliente$$EnhancerBySpringCGLIB$$f60ae77a.registrar(<generated>)
+	at RepositorioCliente$$EnhancerBySpringCGLIB$$f60ae77a.registrar(<generated>)
 	at com.ceiba.cliente.servicio.ServicioCliente.registrarCliente(ServicioCliente.java:17)
 	at com.ceiba.cliente.controlador.ControladorCliente.registrar(ControladorCliente.java:25)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
