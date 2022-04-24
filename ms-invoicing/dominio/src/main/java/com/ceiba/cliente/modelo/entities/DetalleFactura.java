@@ -5,30 +5,28 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.Date;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity(name = "lote")
-public class Lote {
+@Entity(name = "detalle_factura")
+public class DetalleFactura {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name= "id_lote")
+    @Column(name= "id_detalle")
     private int id;
 
-    @Column
-    private String laboratorio;
-
-    @Column(name= "fecha_vencimiento")
-    private Date fechaVencimiento;
-
-    @Column
-    private int cantidad;
+    @ManyToOne
+    @JoinColumn(name="id_factura")
+    private Factura factura;
 
     @ManyToOne
     @JoinColumn(name="id_producto")
     private Producto producto;
+
+    @Column
+    private int cantidad;
+
 
 }

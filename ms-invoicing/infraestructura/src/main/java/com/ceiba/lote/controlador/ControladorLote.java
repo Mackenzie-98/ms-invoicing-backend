@@ -12,8 +12,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/lotes")
-@Api(tags = { "Controlador lote"})
-public class ControladoLote {
+@Api(tags = { "controlador-lote"})
+public class ControladorLote {
 
     @Autowired
     private ServicioLote servicioLote;
