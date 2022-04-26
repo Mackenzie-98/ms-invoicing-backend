@@ -21,7 +21,7 @@ pipeline{
     }
 
     tools {
-        jdk '11'
+        jdk 'JDK11_Mac'
     }
 
     // Parametros disponibles en jenkins
