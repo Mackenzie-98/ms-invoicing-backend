@@ -6,7 +6,7 @@ import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
 
-public interface iRepositorioLote extends CrudRepository<Lote,Integer>{
+public interface IRepositorioLote extends CrudRepository<Lote,Integer>{
 
     @Query(value = "select * from lote",nativeQuery = true)
     List<Lote> listar();

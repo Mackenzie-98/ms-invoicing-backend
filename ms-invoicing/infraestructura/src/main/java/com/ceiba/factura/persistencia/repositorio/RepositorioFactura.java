@@ -1,8 +1,8 @@
 package com.ceiba.factura.persistencia.repositorio;
 
 import com.ceiba.cliente.modelo.entities.Factura;
-import com.ceiba.cliente.puerto.dao.iDaoFactura;
-import com.ceiba.cliente.puerto.repositorio.iRepositorioFactura;
+import com.ceiba.cliente.puerto.dao.IDaoFactura;
+import com.ceiba.cliente.puerto.repositorio.IRepositorioFactura;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -10,10 +10,10 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public class RepositorioFactura implements iDaoFactura {
+public class RepositorioFactura implements IDaoFactura {
 
     @Autowired
-    private iRepositorioFactura repositorioFactura;
+    private IRepositorioFactura repositorioFactura;
 
 
     @Override

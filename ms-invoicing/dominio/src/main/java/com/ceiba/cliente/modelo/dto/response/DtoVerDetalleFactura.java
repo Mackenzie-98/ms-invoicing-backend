@@ -14,7 +14,6 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class DtoVerDetalleFactura {
-    private Cliente cliente;
     private Factura factura;
     private List<DetalleFactura> detalleCompras;
     private float total;

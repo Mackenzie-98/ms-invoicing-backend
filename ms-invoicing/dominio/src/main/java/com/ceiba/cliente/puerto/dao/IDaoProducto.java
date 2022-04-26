@@ -5,7 +5,7 @@ import com.ceiba.cliente.modelo.entities.Producto;
 import java.util.List;
 import java.util.Optional;
 
-public interface iDaoProducto {
+public interface IDaoProducto {
 
     Producto registrar(Producto Producto);
 

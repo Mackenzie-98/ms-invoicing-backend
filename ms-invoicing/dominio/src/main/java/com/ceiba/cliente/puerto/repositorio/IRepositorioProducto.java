@@ -6,7 +6,7 @@ import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
 
-public interface iRepositorioProducto extends CrudRepository<Producto,Integer>{
+public interface IRepositorioProducto extends CrudRepository<Producto,Integer>{
 
     @Query(value = "select * from producto",nativeQuery = true)
     List<Producto> listar();

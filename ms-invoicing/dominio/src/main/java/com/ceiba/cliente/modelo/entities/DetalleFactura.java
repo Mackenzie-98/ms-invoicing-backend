@@ -1,14 +1,12 @@
 package com.ceiba.cliente.modelo.entities;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import lombok.*;
 
 import javax.persistence.*;
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
+@Getter
+@Builder
 @Entity(name = "detalle_factura")
 public class DetalleFactura {
 
@@ -19,6 +17,7 @@ public class DetalleFactura {
 
     @ManyToOne
     @JoinColumn(name="id_factura")
+    @JsonBackReference
     private Factura factura;
 
     @ManyToOne

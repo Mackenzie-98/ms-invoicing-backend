@@ -5,7 +5,7 @@ import com.ceiba.cliente.modelo.entities.Lote;
 import java.util.List;
 import java.util.Optional;
 
-public interface iDaoLote {
+public interface IDaoLote {
 
     Lote registrar(Lote Lote);
 

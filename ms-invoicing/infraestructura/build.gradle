@@ -14,7 +14,7 @@ plugins {
 
 apply plugin: 'java'
 apply plugin: 'eclipse'
-apply plugin: 'jacoco'
+//apply plugin: 'jacoco'
 
 group = 'com.ceiba'
 version = '0.0.1-SNAPSHOT'
@@ -27,7 +27,7 @@ dependencies {
 	testImplementation project.ext.mockitocore
 	testImplementation project.ext.mockitoinline
 	testImplementation project.ext.mockitojupiter
-	testImplementation project.ext.h2
+//	testImplementation project.ext.h2
 	testImplementation project.ext.springboottest
 	implementation project.ext.springbootweb
 	implementation project.ext.swagger
@@ -48,17 +48,17 @@ dependencies {
 	implementation group: 'org.springframework.data', name: 'spring-data-commons', version: '2.6.4'
 	implementation group: 'org.springframework.data', name: 'spring-data-jpa', version: '2.6.4'
 	implementation group: 'javax.persistence', name: 'javax.persistence-api', version: '2.2'
-	implementation group: 'org.springdoc', name: 'springdoc-openapi-ui', version: '1.6.7'
+
 }
 
-jacocoTestReport {
-	reports {
-		xml.enabled true
-		html.enabled true
-	}
-	additionalSourceDirs files("../aplicacion/src/main/java")
-	additionalClassDirs files("../aplicacion/build/classes/java/main")
-}
+//jacocoTestReport {
+//	reports {
+//		xml.enabled true
+//		html.enabled true
+//	}
+//	additionalSourceDirs files("../aplicacion/src/main/java")
+//	additionalClassDirs files("../aplicacion/build/classes/java/main")
+//}
 
 pitest {
 	testPlugin = 'junit5'
@@ -68,7 +68,7 @@ pitest {
 	useClasspathFile = true
 }
 
-test {
-	useJUnitPlatform()
-	finalizedBy jacocoTestReport
-}
+//test {
+//	useJUnitPlatform()
+//	finalizedBy jacocoTestReport
+//}

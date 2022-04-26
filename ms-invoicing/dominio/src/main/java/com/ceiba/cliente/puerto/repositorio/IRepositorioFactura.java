@@ -6,7 +6,7 @@ import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
 
-public interface iRepositorioFactura extends CrudRepository<Factura,Integer>{
+public interface IRepositorioFactura extends CrudRepository<Factura,Integer>{
 
     @Query(value = "select * from factura",nativeQuery = true)
     List<Factura> listar();

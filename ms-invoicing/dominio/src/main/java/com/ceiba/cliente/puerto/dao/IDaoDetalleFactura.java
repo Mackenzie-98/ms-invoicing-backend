@@ -5,7 +5,7 @@ import com.ceiba.cliente.modelo.entities.DetalleFactura;
 import java.util.List;
 import java.util.Optional;
 
-public interface iDaoDetalleFactura {
+public interface IDaoDetalleFactura {
 
     DetalleFactura registrar(DetalleFactura DetalleFactura);
 

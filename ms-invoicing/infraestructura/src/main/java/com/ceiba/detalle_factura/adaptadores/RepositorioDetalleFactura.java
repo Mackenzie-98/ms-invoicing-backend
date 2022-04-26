@@ -1,8 +1,8 @@
 package com.ceiba.detalle_factura.adaptadores;
 
 import com.ceiba.cliente.modelo.entities.DetalleFactura;
-import com.ceiba.cliente.puerto.dao.iDaoDetalleFactura;
-import com.ceiba.cliente.puerto.repositorio.iRepositorioDetalleFactura;
+import com.ceiba.cliente.puerto.dao.IDaoDetalleFactura;
+import com.ceiba.cliente.puerto.repositorio.IRepositorioDetalleFactura;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -10,10 +10,10 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public class RepositorioDetalleFactura implements iDaoDetalleFactura {
+public class RepositorioDetalleFactura implements IDaoDetalleFactura {
 
     @Autowired
-    private iRepositorioDetalleFactura repositorioDetalleFactura;
+    private IRepositorioDetalleFactura repositorioDetalleFactura;
 
 
     @Override

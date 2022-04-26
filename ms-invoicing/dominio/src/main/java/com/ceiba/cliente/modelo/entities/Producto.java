@@ -1,17 +1,15 @@
 package com.ceiba.cliente.modelo.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.Date;
 import java.util.List;
+import java.util.Objects;
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
+@Getter
+@Builder
 @Entity(name = "producto")
 public class Producto {
 
@@ -34,4 +32,11 @@ public class Producto {
     @JsonIgnore
     private List<Lote> lotes;
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Producto producto = (Producto) o;
+        return id == producto.id && Float.compare(producto.precioUnitario, precioUnitario) == 0 && Objects.equals(nombre, producto.nombre);
+    }
 }

@@ -1,15 +1,12 @@
 package com.ceiba.cliente.modelo.entities;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.Date;
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
+@Getter
+@Builder
 @Entity(name = "lote")
 public class Lote {
 
@@ -22,6 +19,7 @@ public class Lote {
     private String laboratorio;
 
     @Column(name= "fecha_vencimiento")
+    @Temporal(TemporalType.DATE)
     private Date fechaVencimiento;
 
     @Column

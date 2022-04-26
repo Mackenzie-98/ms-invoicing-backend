@@ -24,11 +24,12 @@ repositories {
 }
 
 dependencies {
+	implementation 'org.projectlombok:lombok:1.18.22'
 	testImplementation project.ext.springboottest
 	testImplementation project.ext.mockitocore
 	testImplementation project.ext.mockitoinline
 	testImplementation project.ext.mockitojupiter
-	testImplementation project(':comun:comun-test')
+//	testImplementation project(':comun:comun-test')
 
 	implementation project(':comun:comun-dominio')
 

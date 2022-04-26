@@ -40,3 +40,12 @@ CREATE TABLE detalle_factura (
 	CONSTRAINT detalle_factura_fk FOREIGN KEY (id_factura) REFERENCES factura(id_factura) ON DELETE CASCADE,
 	CONSTRAINT detalle_factura_fk_1 FOREIGN KEY (id_producto) REFERENCES producto(id_producto) ON DELETE CASCADE
 );
+
+INSERT INTO cliente (identificacion, nombre, apellido) VALUES ('1090520120', 'Edinsson', 'Melo');
+INSERT INTO cliente (identificacion, nombre, apellido) VALUES ('1234567890', 'Andres', 'Rodriguez');
+
+INSERT INTO producto (nombre, precio_unitario) VALUES ('Acetaminofen', '5500');
+INSERT INTO producto (nombre, precio_unitario) VALUES ('Fluconazol', '10000');
+INSERT INTO producto (nombre, precio_unitario) VALUES ('Ibuprofeno', '3500');
+INSERT INTO producto (nombre, precio_unitario) VALUES ('Dolex', '6500');
+INSERT INTO producto (nombre, precio_unitario) VALUES ('Colgate', '3500');

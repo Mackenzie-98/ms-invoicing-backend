@@ -1,8 +1,8 @@
 package com.ceiba.lote.persistencia.repositorio;
 
 import com.ceiba.cliente.modelo.entities.Lote;
-import com.ceiba.cliente.puerto.dao.iDaoLote;
-import com.ceiba.cliente.puerto.repositorio.iRepositorioLote;
+import com.ceiba.cliente.puerto.dao.IDaoLote;
+import com.ceiba.cliente.puerto.repositorio.IRepositorioLote;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -10,10 +10,10 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public class RepositorioLote implements iDaoLote {
+public class RepositorioLote implements IDaoLote {
 
     @Autowired
-    private iRepositorioLote repositorioLote;
+    private IRepositorioLote repositorioLote;
 
 
     @Override

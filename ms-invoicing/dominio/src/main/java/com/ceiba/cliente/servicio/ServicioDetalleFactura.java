@@ -1,12 +1,12 @@
 package com.ceiba.cliente.servicio;
 
 import com.ceiba.cliente.modelo.dto.response.DtoVerDetalleFactura;
-import com.ceiba.cliente.modelo.entities.Cliente;
 import com.ceiba.cliente.modelo.entities.DetalleFactura;
 import com.ceiba.cliente.modelo.entities.Factura;
-import com.ceiba.cliente.puerto.dao.iDaoCliente;
-import com.ceiba.cliente.puerto.dao.iDaoDetalleFactura;
-import com.ceiba.cliente.puerto.dao.iDaoFactura;
+import com.ceiba.cliente.modelo.excepciones.ExcepcionTecnica;
+import com.ceiba.cliente.modelo.excepciones.enums.EnumMensajeExcepcion;
+import com.ceiba.cliente.puerto.dao.IDaoDetalleFactura;
+import com.ceiba.cliente.puerto.dao.IDaoFactura;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,28 +15,29 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+import static com.ceiba.cliente.modelo.excepciones.enums.EnumMensajeExcepcion.NO_ENCONTRADO;
+
 @Service
 public class ServicioDetalleFactura {
 
     @Autowired
-    private iDaoDetalleFactura daoDetalleFactura;
+    private IDaoDetalleFactura daoDetalleFactura;
 
     @Autowired
-    private iDaoFactura daoFactura;
+    private IDaoFactura daoFactura;
 
 
     public ResponseEntity<DtoVerDetalleFactura> verDetalleFactura(int id){
         DtoVerDetalleFactura detalleFactura = new DtoVerDetalleFactura();
 
-        Factura factura = daoFactura.buscarPorId(id).get();
-        Cliente cliente = factura.getCliente();
-
-        detalleFactura.setFactura(factura);
-        detalleFactura.setCliente(cliente);
-        detalleFactura.setDetalleCompras(daoDetalleFactura.verDetalleFactura(id));
-        detalleFactura.setTotal(calcularTotalFactura(factura.getDetalleFacturas()));
-
-        return new ResponseEntity(detalleFactura,HttpStatus.OK);
+        Optional<Factura> factura = daoFactura.buscarPorId(id);
+        if(factura.isPresent()){
+            detalleFactura.setFactura(factura.get());
+            detalleFactura.setDetalleCompras(daoDetalleFactura.verDetalleFactura(id));
+            detalleFactura.setTotal(calcularTotalFactura(factura.get().getDetalleFacturas()));
+            return new ResponseEntity(detalleFactura,HttpStatus.OK);
+        }else
+            throw new ExcepcionTecnica(NO_ENCONTRADO);
     }
 
     private float calcularTotalFactura(List<DetalleFactura> detalleFactura){

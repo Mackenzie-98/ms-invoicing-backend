@@ -1,8 +1,8 @@
 package com.ceiba.producto.persistencia.repositorio;
 
 import com.ceiba.cliente.modelo.entities.Producto;
-import com.ceiba.cliente.puerto.dao.iDaoProducto;
-import com.ceiba.cliente.puerto.repositorio.iRepositorioProducto;
+import com.ceiba.cliente.puerto.dao.IDaoProducto;
+import com.ceiba.cliente.puerto.repositorio.IRepositorioProducto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -10,10 +10,10 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public class RepositorioProducto implements iDaoProducto {
+public class RepositorioProducto implements IDaoProducto {
 
     @Autowired
-    private iRepositorioProducto repositorioProducto;
+    private IRepositorioProducto repositorioProducto;
 
 
     @Override

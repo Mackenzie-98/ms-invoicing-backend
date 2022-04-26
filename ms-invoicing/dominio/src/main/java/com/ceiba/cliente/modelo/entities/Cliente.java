@@ -1,16 +1,16 @@
 package com.ceiba.cliente.modelo.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.List;
 
-@Data
-@AllArgsConstructor
+
+@Builder
+@Getter
 @NoArgsConstructor
+@AllArgsConstructor
 @Entity(name = "cliente")
 public class Cliente {
 
