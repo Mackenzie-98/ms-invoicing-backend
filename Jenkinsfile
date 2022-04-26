@@ -40,7 +40,7 @@ pipeline{
                 //Esta opción se usa para el checkout sencillo de un microservicio
                 gitCheckout(
                     urlProject:'https://github.com/Mackenzie-98/ms-invoicing-backend.git',
-                    branchProject: '${BRANCH_NAME}', 
+                    branchProject: 'master', 
                 )
 
                 //Esta opción se usa cuando el comun está centralizado para varios microservicios
@@ -50,7 +50,7 @@ pipeline{
                     urlComun: 'git@git.ceiba.com.co:ceiba_legos/comun.git'
                 )*/
 
-                dir("${PROJECT_PATH_BACK}"){
+                dir("ms-invoicing"){
                     sh 'chmod +x ./gradlew'
                     sh './gradlew clean'
                 }
