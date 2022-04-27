@@ -12,11 +12,12 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.http.ResponseEntity;
 
 import java.time.LocalDate;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
 import static com.ceiba.excepciones.enums.EnumMensajeExcepcion.NO_ENCONTRADO;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 import static org.springframework.http.HttpStatus.OK;
@@ -108,7 +109,7 @@ class ServicioFacturaTest {
                 .fecha(createAt)
                 .build();
 
-        List<Factura> facturas = List.of(factura1, factura2);
+        List<Factura> facturas = Arrays.asList(factura1, factura2);
         when(daoFactura.listar()).thenReturn(facturas);
 
         // act

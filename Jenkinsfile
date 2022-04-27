@@ -14,7 +14,7 @@ pipeline {
 
 	//Una sección que define las herramientas “preinstaladas” en Jenkins
 	tools {
-		jdk 'JDK11_Centos' //Versión preinstalada en la Configuración del Master
+		jdk 'JDK8_Centos' //Versión preinstalada en la Configuración del Master
 	}
 
 	//Aquí comienzan los “items” del Pipeline
@@ -61,7 +61,7 @@ pipeline {
 		}
 		success {
 			echo 'This will run only if successful'
-			junit 'ms-invoicing/build/jacoco/test/*.xml' //RUTA RELATIVA DE LOS ARCHIVOS .XML
+			junit 'ms-invoicing/build/jacoco/*.xml' //RUTA RELATIVA DE LOS ARCHIVOS .XML
 		}
 		failure {
 			echo 'This will run only if failed'

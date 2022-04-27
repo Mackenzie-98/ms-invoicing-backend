@@ -1,7 +1,6 @@
 package com.ceiba.compra.servicio;
 
 import com.ceiba.cliente.modelo.entities.Cliente;
-import com.ceiba.cliente.puerto.dao.IDaoCliente;
 import com.ceiba.compra.modelo.dto.DtoCompra;
 import com.ceiba.detalle_factura.modelo.entities.DetalleFactura;
 import com.ceiba.excepciones.ExcepcionTecnica;
@@ -18,13 +17,13 @@ import org.springframework.http.ResponseEntity;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
 import static com.ceiba.excepciones.enums.EnumMensajeExcepcion.COMPRA_NO_PERMITIDA_FIN_SEMANA;
-import static com.ceiba.excepciones.enums.EnumMensajeExcepcion.NO_ENCONTRADO;
-import static org.mockito.Mockito.when;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.when;
 import static org.springframework.http.HttpStatus.OK;
 
 @ExtendWith(MockitoExtension.class)
@@ -81,13 +80,13 @@ class ServicioCompraTest {
                 .cantidad(3)
                 .build();
 
-        factura.setDetalleFacturas(List.of(detalle1,detalle2));
+        factura.setDetalleFacturas(Arrays.asList(detalle1,detalle2));
 
 
         DtoCompra compra = DtoCompra.builder()
                 .factura(factura)
-                .idProductos(List.of(1,2))
-                .cantidades(List.of(detalle1.getCantidad(),detalle2.getCantidad()))
+                .idProductos(Arrays.asList(1,2))
+                .cantidades(Arrays.asList(detalle1.getCantidad(),detalle2.getCantidad()))
                 .build();
 
         when(daoProducto.buscarPorId(1)).thenReturn(Optional.of(producto1));
@@ -100,8 +99,6 @@ class ServicioCompraTest {
         //assert
         assertEquals(OK,facturaCompra.getStatusCode());
         assertEquals(cliente,facturaCompra.getBody().getCliente());
-//        assertEquals(detalle1,facturaCompra.getBody().getDetalleFacturas().get(0));
-//        assertEquals(detalle2,facturaCompra.getBody().getDetalleFacturas().get(1));
         assertEquals("Factura de prueba",facturaCompra.getBody().getDescripcion());
         assertEquals(createAt,facturaCompra.getBody().getFecha());
         assertEquals(calcularTotalFactura(factura.getDetalleFacturas()),facturaCompra.getBody().getTotal());
@@ -150,13 +147,13 @@ class ServicioCompraTest {
                 .cantidad(3)
                 .build();
 
-        factura.setDetalleFacturas(List.of(detalle1,detalle2));
+        factura.setDetalleFacturas(Arrays.asList(detalle1,detalle2));
 
 
         DtoCompra compra = DtoCompra.builder()
                 .factura(factura)
-                .idProductos(List.of(1,2))
-                .cantidades(List.of(detalle1.getCantidad(),detalle2.getCantidad()))
+                .idProductos(Arrays.asList(1,2))
+                .cantidades(Arrays.asList(detalle1.getCantidad(),detalle2.getCantidad()))
                 .build();
 
         //act

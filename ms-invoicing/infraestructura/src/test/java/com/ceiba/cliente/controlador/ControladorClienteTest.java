@@ -3,6 +3,7 @@
 //import com.ceiba.ApplicationMock;
 //import com.ceiba.cliente.modelo.entities.Cliente;
 //import com.fasterxml.jackson.databind.ObjectMapper;
+//import org.junit.jupiter.api.BeforeEach;
 //import org.junit.jupiter.api.Test;
 //import org.junit.jupiter.api.extension.ExtendWith;
 //import org.springframework.beans.factory.annotation.Autowired;
@@ -13,14 +14,16 @@
 //import org.springframework.test.context.junit.jupiter.SpringExtension;
 //import org.springframework.test.web.servlet.MockMvc;
 //
-//import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
-//import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
+//import static org.hamcrest.Matchers.hasSize;
+//import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
+//import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
+//import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 //import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 //
-//@ExtendWith(SpringExtension.class)
-//@WebMvcTest(ControladorCliente.class)
+//@WebMvcTest(controllers = ControladorCliente.class)
 //@ContextConfiguration(classes = ApplicationMock.class)
 //@DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
+//@ExtendWith(SpringExtension.class)
 //class ControladorClienteTest {
 //
 //
@@ -30,10 +33,17 @@
 //    @Autowired
 //    private MockMvc mocMvc;
 //
-//    public static final String JSON_RESPONSE = "{\n" +
-//            "  \"identificacion\": \"string\",\n" +
-//            "  \"nombre\": \"string\",\n" +
-//            "  \"apellido\": \"string\"\n" +
+//
+//    @BeforeEach
+//    void setup(){
+//        objectMapper = new ObjectMapper();
+////        this.mocMvc = MockMvcBuilders.standaloneSetup(controladorCliente).build();
+//    }
+//
+//    public String BODY = "{\n" +
+//            "  \"identificacion\": \"123\",\n" +
+//            "  \"nombre\": \"Edinsson\",\n" +
+//            "  \"apellido\": \"Melo\"\n" +
 //            "}";
 //
 //
@@ -50,8 +60,25 @@
 //        mocMvc.perform(post("/clientes/registrar")
 //                .contentType(MediaType.APPLICATION_JSON)
 //                .content(objectMapper.writeValueAsString(cliente)))
+//                .andDo(print())
+//                .andExpect(status().is2xxSuccessful());
+////                .andExpect(content().json(BODY))
+//    }
+//
+//    @Test
+//    void deberiaEliminarUnCliente() throws Exception{
+//        // arrange
+//        String id = "123";
+//        // act - assert
+//        mocMvc.perform(delete("/clientes/{id}",id)
+//                        .contentType(MediaType.APPLICATION_JSON)
+//                        .accept(MediaType.APPLICATION_JSON))
+//                .andExpect(status().isOk());
+//
+//        mocMvc.perform(get("/clientes/listar")
+//                        .contentType(MediaType.APPLICATION_JSON))
 //                .andExpect(status().isOk())
-//                .andExpect(content().json(JSON_RESPONSE));
+//                .andExpect(jsonPath("$", hasSize(0)));
 //    }
 //
 //}

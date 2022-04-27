@@ -17,6 +17,9 @@ plugins {
 	id "org.sonarqube" version "3.3"
 }
 
+group = 'com.ceiba'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '8'
 
 allprojects {
     repositories {
@@ -26,9 +29,7 @@ allprojects {
 	apply plugin: 'jacoco'
 	apply plugin: 'org.owasp.dependencycheck'
 
-	group = 'com.ceiba'
-	version = '0.0.1-SNAPSHOT'
-	sourceCompatibility = '11.0.13'
+
 
 
 	project.ext.apachecommons = [
@@ -81,9 +82,8 @@ allprojects {
 
 	project.ext.h2 = ["com.h2database:h2:1.4.200"]
 	dependencies{
-		implementation group: 'org.springdoc', name: 'springdoc-openapi-ui', version: '1.6.7'
 		implementation project.ext.lombok;
-
+		annotationProcessor project.ext.lombok;
 	}
 
 
@@ -110,43 +110,20 @@ dependencies {
 	implementation project.ext.springbootundertow
 	implementation project.ext.flyway
 
-	testImplementation project.ext.mockitocore
-	testImplementation project.ext.mockitoinline
-	testImplementation project.ext.mockitojupiter
-	testImplementation project.ext.springboottest
-	implementation project.ext.swagger
-
-	implementation project.ext.apachecommons
-	implementation project.ext.springbootjdbc
-
-	runtimeOnly 'com.h2database:h2'
-//	runtimeOnly 'org.postgresql:postgresql'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
 	implementation group: 'org.springframework.data', name: 'spring-data-commons', version: '2.6.4'
 	implementation group: 'org.springframework', name: 'spring-web', version: '5.3.19'
 	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.6.6'
 	implementation group: 'javax.persistence', name: 'javax.persistence-api', version: '2.2'
+//	implementation group: 'org.springdoc', name: 'springdoc-openapi-ui', version: '1.6.7'
 
 
 	implementation project(':infraestructura')
-	implementation project(':dominio')
-	implementation project(':comun:comun-aplicacion')
 
 }
 
 repositories {
 	mavenCentral()
-}
-
-bootJar {
-	mainClassName = 'com.ceiba.Application'
-    baseName = ''
-    version =  version
-}
-
-jacoco {
-	toolVersion = '0.8.7'
-	reportsDir = file("$buildDir/reports")
 }
 
 task jacocoMergedReport(type: JacocoReport) {
@@ -167,12 +144,25 @@ task jacocoMergedReport(type: JacocoReport) {
 			fileTree(dir: it, exclude: [
 					'**/actuator/*','**/configuracion/*','**/jdbc/*','**/filtro/*',
 					'**/dto/*', '**/core/*', '**/ValidadorArgumento.class', '**/Comando*.class',
-					'**/Application.class', '**/error', '**/fabrica', '**/excepcion', '**/manejador','**/adaptador/*'
+					'**/Application.class', '**/error', '**/fabrica', '**/excepcion', '**/manejador'
 
 			])
 		}))
 	}
 }
+
+bootJar {
+	mainClassName = 'com.ceiba.Application'
+    baseName = 'facturacion'
+    version =  version
+}
+
+jacoco {
+	toolVersion = '0.8.7'
+	reportsDir = file("$buildDir/reports")
+}
+
+
 
 
 test {

@@ -1,13 +1,13 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
 
-sourceCompatibility = '11.0.13'
+sourceCompatibility = '8'
 
 repositories {
 	mavenCentral()
 }
 
 dependencies {
-	runtimeOnly 'com.h2database:h2'
+	implementation project.ext.h2;
 	implementation project.ext.springboottest
 }

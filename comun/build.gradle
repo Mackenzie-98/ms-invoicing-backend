@@ -31,7 +31,7 @@ allprojects {
 		runtime.exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
 
-	project.ext.h2 = ["com.h2database:h2"]
+	project.ext.h2 = ["com.h2database:h2:1.4.200"]
 	project.ext.actuator=["org.springframework.boot:spring-boot-starter-actuator:2.1.6.RELEASE"]
 
 }

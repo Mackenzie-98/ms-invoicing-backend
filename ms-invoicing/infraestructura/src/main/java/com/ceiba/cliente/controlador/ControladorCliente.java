@@ -1,8 +1,5 @@
 package com.ceiba.cliente.controlador;
 
-import com.ceiba.ComandoRespuesta;
-import com.ceiba.cliente.ComandoCliente;
-import com.ceiba.cliente.manejador.ManejadorRegistrarCliente;
 import com.ceiba.cliente.modelo.entities.Cliente;
 import com.ceiba.cliente.servicio.ServicioCliente;
 import io.swagger.annotations.Api;
