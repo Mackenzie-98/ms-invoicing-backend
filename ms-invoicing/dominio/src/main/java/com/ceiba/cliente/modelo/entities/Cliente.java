@@ -1,7 +1,11 @@
 package com.ceiba.cliente.modelo.entities;
 
+import com.ceiba.factura.modelo.entities.Factura;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.List;
@@ -23,7 +27,7 @@ public class Cliente {
     @Column
     private String apellido;
 
-    @OneToMany(mappedBy = "cliente",cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "cliente")
     @JsonIgnore
     private List<Factura> facturas;
 }

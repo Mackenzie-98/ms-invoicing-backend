@@ -21,3 +21,6 @@ spring:
       password:
       hikari:
          poolName: SpringBootJPAHikariCP
+#   mvc:
+#      pathmatch:
+#         matching-strategy: ant_path_matcher

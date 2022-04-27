@@ -1,32 +1,26 @@
 package com.ceiba.cliente.servicio;
 
 import com.ceiba.cliente.modelo.entities.Cliente;
-import com.ceiba.cliente.modelo.excepciones.ExcepcionTecnica;
 import com.ceiba.cliente.puerto.dao.IDaoCliente;
-import lombok.extern.java.Log;
-import net.bytebuddy.dynamic.DynamicType;
+import com.ceiba.excepciones.ExcepcionTecnica;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.http.ResponseEntity;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
-import static com.ceiba.cliente.modelo.excepciones.enums.EnumMensajeExcepcion.NO_ENCONTRADO;
-import static org.junit.jupiter.api.Assertions.*;
+import static com.ceiba.excepciones.enums.EnumMensajeExcepcion.NO_ENCONTRADO;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
-import static org.springframework.http.HttpStatus.NOT_FOUND;
 import static org.springframework.http.HttpStatus.OK;
 
 @ExtendWith(MockitoExtension.class)
-@Log
 class ServicioClienteTest {
 
     @InjectMocks
@@ -49,8 +43,8 @@ class ServicioClienteTest {
         ResponseEntity<Cliente> response = servicioCliente.registrarCliente(cliente);
 
         //- assert
-        assertEquals(response.getStatusCode(), OK);
-        assertEquals(response.getBody(),cliente);
+        assertEquals(OK,response.getStatusCode());
+        assertEquals(cliente,response.getBody());
     }
     @Test
     void deberiaEliminarUnClienteCorrectamente() {
@@ -66,8 +60,8 @@ class ServicioClienteTest {
         ResponseEntity<String> response = servicioCliente.eliminarCliente(cliente.getIdentificacion());
 
         //- assert
-        assertEquals(response.getStatusCode(), OK);
-        assertEquals(response.getBody(),"Cliente eliminado correctamente.");
+        assertEquals(OK,response.getStatusCode()) ;
+        assertEquals("Cliente eliminado correctamente.",response.getBody());
     }
 
     @Test
@@ -84,8 +78,8 @@ class ServicioClienteTest {
         ResponseEntity<Cliente> response = servicioCliente.buscarClientePorId(cliente.getIdentificacion());
 
         //- assert
-        assertEquals(response.getStatusCode(), OK);
-        assertEquals(response.getBody(),cliente);
+        assertEquals(OK,response.getStatusCode()) ;
+        assertEquals(cliente,response.getBody());
     }
 
     @Test
@@ -110,8 +104,8 @@ class ServicioClienteTest {
         ResponseEntity<List<Cliente>> response = servicioCliente.listarClientes();
 
         //- assert
-        assertEquals(response.getStatusCode(), OK);
-        assertEquals(response.getBody(),listaClientes);
+        assertEquals(OK,response.getStatusCode());
+        assertEquals(listaClientes,response.getBody());
     }
 
     @Test

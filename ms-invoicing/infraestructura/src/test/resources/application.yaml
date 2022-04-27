@@ -6,4 +6,6 @@ spring:
       password:
       hikari:
          poolName: pool
-
+#   mvc:
+#      pathmatch:
+#         matching-strategy: ant_path_matcher

@@ -9,6 +9,7 @@ CREATE TABLE factura (
 	id_factura int4 NOT NULL GENERATED ALWAYS AS IDENTITY,
 	fecha date NOT NULL,
 	descripcion varchar NULL,
+	total float4 NOT NULL,
 	id_cliente varchar NOT NULL,
 	CONSTRAINT factura_pk PRIMARY KEY (id_factura),
 	CONSTRAINT factura_fk FOREIGN KEY (id_cliente) REFERENCES cliente(identificacion)
@@ -49,3 +50,4 @@ INSERT INTO producto (nombre, precio_unitario) VALUES ('Fluconazol', '10000');
 INSERT INTO producto (nombre, precio_unitario) VALUES ('Ibuprofeno', '3500');
 INSERT INTO producto (nombre, precio_unitario) VALUES ('Dolex', '6500');
 INSERT INTO producto (nombre, precio_unitario) VALUES ('Colgate', '3500');
+

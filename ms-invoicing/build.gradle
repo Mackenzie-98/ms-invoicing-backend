@@ -73,15 +73,17 @@ allprojects {
 			"io.springfox:springfox-swagger2:2.9.2"
 	]
 
-	project.ext.db = [""]
+	project.ext.db = ["com.h2database:h2"]
 
 	project.ext.springbootjdbc = ["org.springframework.boot:spring-boot-starter-jdbc:${springBootVersion}"]
 	project.ext.flyway = ["org.flywaydb:flyway-core:5.2.1"]
 	project.ext.flywaytest = ["org.flywaydb.flyway-test-extensions:flyway-spring-test:5.2.1"]
 
-	project.ext.h2 = ["com.h2database:h2"]
+	project.ext.h2 = ["com.h2database:h2:1.4.200"]
 	dependencies{
 		implementation group: 'org.springdoc', name: 'springdoc-openapi-ui', version: '1.6.7'
+		implementation project.ext.lombok;
+
 	}
 
 
@@ -128,6 +130,7 @@ dependencies {
 
 	implementation project(':infraestructura')
 	implementation project(':dominio')
+	implementation project(':comun:comun-aplicacion')
 
 }
 
@@ -162,13 +165,9 @@ task jacocoMergedReport(type: JacocoReport) {
 	afterEvaluate {
 		classDirectories.setFrom(files(classDirectories.files.collect {
 			fileTree(dir: it, exclude: [
-					'**/actuator/*',
-					'**/configuracion/*',
-					'**/jdbc/*',
-					'**/filtro/*',
-					'**/core/*',
-					'**/ComandoRespuesta',
-					'**/Application'
+					'**/actuator/*','**/configuracion/*','**/jdbc/*','**/filtro/*',
+					'**/dto/*', '**/core/*', '**/ValidadorArgumento.class', '**/Comando*.class',
+					'**/Application.class', '**/error', '**/fabrica', '**/excepcion', '**/manejador','**/adaptador/*'
 
 			])
 		}))

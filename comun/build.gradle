@@ -34,5 +34,4 @@ allprojects {
 	project.ext.h2 = ["com.h2database:h2"]
 	project.ext.actuator=["org.springframework.boot:spring-boot-starter-actuator:2.1.6.RELEASE"]
 
-
 }
