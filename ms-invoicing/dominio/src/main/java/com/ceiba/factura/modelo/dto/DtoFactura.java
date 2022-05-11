@@ -3,13 +3,13 @@ package com.ceiba.factura.modelo.dto;
 import com.ceiba.usuario.modelo.dto.DtoUsuario;
 import com.ceiba.venta_producto.modelo.dto.DtoVentaProducto;
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
-@Getter
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class DtoFactura {

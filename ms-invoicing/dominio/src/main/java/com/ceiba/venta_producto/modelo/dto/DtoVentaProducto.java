@@ -2,10 +2,10 @@ package com.ceiba.venta_producto.modelo.dto;
 
 import com.ceiba.producto.modelo.dto.DtoProducto;
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Getter
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class DtoVentaProducto {
