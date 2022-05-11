@@ -4,23 +4,23 @@ jasypt:
       algorithm: PBEWithMD5AndDES
 
 server:
-   port: 
+   port: 8080
    servlet:
-      context-path: /
+      context-path: /ms-invoicing
       session:
          timeout: 21600s
 
 spring:
    datasource:
       driver-class-name: org.h2.Driver
-#      driver-class-name: org.postgresql.Driver
+      #      driver-class-name: org.postgresql.Driver
       type: com.zaxxer.hikari.HikariDataSource
-#      jdbcUrl: jdbc:postgresql://localhost:5432/postgres?currentSchema=invoicing-schema
+      #      jdbcUrl: jdbc:postgresql://localhost:5432/postgres?currentSchema=invoicing-schema
       jdbcUrl: jdbc:h2:mem:invoicing
       username: sa
       password:
       hikari:
-         poolName: SpringBootJPAHikariCP
-#   mvc:
-#      pathmatch:
-#         matching-strategy: ant_path_matcher
+         poolName: pool
+   mvc:
+      pathmatch:
+         matching-strategy: ant_path_matcher

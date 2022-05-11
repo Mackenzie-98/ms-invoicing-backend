@@ -1,0 +1,1 @@
+select * from venta_producto where id_factura = :idFactura

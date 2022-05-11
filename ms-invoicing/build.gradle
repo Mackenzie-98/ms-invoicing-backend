@@ -13,24 +13,14 @@ plugins {
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'java'
 	id 'info.solidsoft.pitest' version '1.7.0'
-	id 'jacoco'
-	id "org.sonarqube" version "3.3"
 }
 
-group = 'com.ceiba'
-version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '8'
 
 allprojects {
     repositories {
         mavenCentral() 
     }
-	apply plugin: 'java'
-	apply plugin: 'jacoco'
 	apply plugin: 'org.owasp.dependencycheck'
-
-
-
 
 	project.ext.apachecommons = [
 			"commons-io:commons-io:2.6",
@@ -44,7 +34,7 @@ allprojects {
 	project.ext.mockitoinline = ['org.mockito:mockito-inline:3.11.2']
 	project.ext.mockitojupiter = ['org.mockito:mockito-junit-jupiter:3.11.2']
 	project.ext.lombok = ["org.projectlombok:lombok:1.18.20"]
-
+	
 	project.ext.springboottest = ["org.springframework.boot:spring-boot-starter-test:${springBootVersion}"]
 	project.ext.springbootweb = ["org.springframework.boot:spring-boot-starter-web:${springBootVersion}"]
 	project.ext.springdevtools = ["org.springframework.boot:spring-boot-devtools:${springBootVersion}"]
@@ -63,7 +53,7 @@ allprojects {
 			}
 		}
 	}
-
+	
 	project.ext.springtxt = [
 							  	"org.springframework:spring-tx:${springVersion}",
 							  	"org.springframework:spring-context:${springVersion}"
@@ -81,95 +71,35 @@ allprojects {
 	project.ext.flywaytest = ["org.flywaydb.flyway-test-extensions:flyway-spring-test:5.2.1"]
 
 	project.ext.h2 = ["com.h2database:h2:1.4.200"]
-	dependencies{
-		implementation project.ext.lombok;
-		annotationProcessor project.ext.lombok;
-	}
-
-
-
-	jacocoTestReport {
-		reports {
-			xml.enabled true
-			csv.enabled false
-		}
-	}
 }
 
-
-dependencies {
-
-	configurations {
-		runtime.exclude module: 'spring-boot-starter-tomcat'
-		compile.exclude module: 'spring-boot-starter-tomcat'
-	}
-
-	implementation project.ext.springbootweb
-	runtimeOnly project.ext.springdevtools
-
-	implementation project.ext.springbootundertow
-	implementation project.ext.flyway
-
-	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
-	implementation group: 'org.springframework.data', name: 'spring-data-commons', version: '2.6.4'
-	implementation group: 'org.springframework', name: 'spring-web', version: '5.3.19'
-	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.6.6'
-	implementation group: 'javax.persistence', name: 'javax.persistence-api', version: '2.2'
-//	implementation group: 'org.springdoc', name: 'springdoc-openapi-ui', version: '1.6.7'
-
-
-	implementation project(':infraestructura')
-
-}
+group = 'com.ceiba'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '8'
 
 repositories {
 	mavenCentral()
 }
 
-task jacocoMergedReport(type: JacocoReport) {
-	dependsOn = allprojects.jacocoTestReport
-	additionalSourceDirs.setFrom files(allprojects.sourceSets.main.allSource.srcDirs)
-	sourceDirectories.setFrom files(allprojects.sourceSets.main.allSource.srcDirs)
-	classDirectories.setFrom files(allprojects.sourceSets.main.output)
-	executionData.setFrom project.fileTree(dir: '.', include: '**/build/jacoco/test.exec')
-	reports {
-		xml.enabled true
-		xml.destination = file("${buildDir}/jacoco/report.xml")
-		csv.enabled false
-		html.enabled true
-		html.destination = file("${buildDir}/jacoco")
-	}
-	afterEvaluate {
-		classDirectories.setFrom(files(classDirectories.files.collect {
-			fileTree(dir: it, exclude: [
-					'**/actuator/*','**/configuracion/*','**/jdbc/*','**/filtro/*',
-					'**/dto/*', '**/core/*', '**/ValidadorArgumento.class', '**/Comando*.class',
-					'**/Application.class', '**/error', '**/fabrica', '**/excepcion', '**/manejador'
+dependencies {
 
-			])
-		}))
+	configurations {
+    	runtime.exclude module: 'spring-boot-starter-tomcat'
+    	compile.exclude module: 'spring-boot-starter-tomcat'
 	}
+
+	implementation project.ext.springbootweb
+	runtimeOnly project.ext.springdevtools
+	
+	implementation project.ext.springbootundertow
+	implementation project.ext.flyway
+	runtimeOnly project.ext.h2;
+
+	implementation project(':infraestructura')
 }
 
 bootJar {
 	mainClassName = 'com.ceiba.Application'
-    baseName = 'facturacion'
+    baseName = 'ms-invoicing'
     version =  version
 }
-
-jacoco {
-	toolVersion = '0.8.7'
-	reportsDir = file("$buildDir/reports")
-}
-
-
-
-
-test {
-	useJUnitPlatform()
-	finalizedBy jacocoMergedReport
-}
-
-
-
-

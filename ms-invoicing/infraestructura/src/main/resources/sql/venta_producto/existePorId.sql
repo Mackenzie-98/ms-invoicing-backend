@@ -1,0 +1,1 @@
+select count(1) from venta_producto where id = :id

@@ -1,0 +1,1 @@
+insert into venta_producto (id_factura,id_producto,cantidad) values (:idFactura,:idProducto,:cantidad)
