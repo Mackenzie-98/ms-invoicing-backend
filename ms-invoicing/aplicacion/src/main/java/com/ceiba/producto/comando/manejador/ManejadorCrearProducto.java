@@ -6,8 +6,6 @@ import com.ceiba.producto.comando.ComandoProducto;
 import com.ceiba.producto.comando.fabrica.FabricaProducto;
 import com.ceiba.producto.modelo.entidad.Producto;
 import com.ceiba.producto.servicio.ServicioCrearProducto;
-import com.ceiba.usuario.modelo.entidad.Usuario;
-import com.ceiba.usuario.servicio.ServicioCrearUsuario;
 import org.springframework.stereotype.Component;
 
 @Component

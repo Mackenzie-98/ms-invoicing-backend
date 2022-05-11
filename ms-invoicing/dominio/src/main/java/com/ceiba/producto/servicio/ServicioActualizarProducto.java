@@ -6,7 +6,7 @@ import com.ceiba.producto.puerto.repositorio.RepositorioProducto;
 
 public class ServicioActualizarProducto {
 
-    private static final String EL_PRODUCTO_NO_EXISTE_EN_EL_SISTEMA = "El no producto existe en el sistema";
+    private static final String EL_PRODUCTO_NO_EXISTE_EN_EL_SISTEMA = "El producto no existe en el sistema";
 
     private final RepositorioProducto repositorioProducto;
 

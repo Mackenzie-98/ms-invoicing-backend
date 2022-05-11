@@ -6,8 +6,6 @@ import com.ceiba.factura.comando.fabrica.FabricaFactura;
 import com.ceiba.factura.modelo.entidad.Factura;
 import com.ceiba.factura.servicio.ServicioCrearFactura;
 import com.ceiba.manejador.ManejadorComandoRespuesta;
-import com.ceiba.usuario.modelo.entidad.Usuario;
-import com.ceiba.usuario.servicio.ServicioCrearUsuario;
 import org.springframework.stereotype.Component;
 
 @Component

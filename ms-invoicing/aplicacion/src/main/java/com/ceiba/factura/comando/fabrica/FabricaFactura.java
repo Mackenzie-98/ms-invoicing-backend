@@ -8,7 +8,6 @@ import com.ceiba.usuario.modelo.entidad.Usuario;
 import com.ceiba.usuario.puerto.dao.DaoUsuario;
 import com.ceiba.venta_producto.modelo.dto.DtoVentaProducto;
 import com.ceiba.venta_producto.modelo.entidad.VentaProducto;
-import com.ceiba.venta_producto.puerto.dao.DaoVentaProducto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

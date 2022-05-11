@@ -1,7 +1,6 @@
 package com.ceiba.producto.servicio;
 
 import com.ceiba.producto.puerto.repositorio.RepositorioProducto;
-import com.ceiba.usuario.puerto.repositorio.RepositorioUsuario;
 
 public class ServicioEliminarProducto {
 

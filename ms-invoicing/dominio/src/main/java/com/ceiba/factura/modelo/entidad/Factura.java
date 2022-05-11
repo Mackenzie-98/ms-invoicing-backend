@@ -7,7 +7,6 @@ import lombok.Getter;
 
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import static com.ceiba.dominio.ValidadorArgumento.validarObligatorio;
 
@@ -23,10 +22,11 @@ public class Factura {
     private Double total;
 
     private Usuario usuario;
-    public List<VentaProducto> productosVenta;
+    private List<VentaProducto> productosVenta;
 
     public Factura(Long id, LocalDateTime fecha, String descripcion, Double total, Usuario usuario,List<VentaProducto> productosVenta) {
         validarObligatorio(usuario,SE_DEBE_INGRESAR_LOS_DATOS_DEL_USUARIO);
+        validarObligatorio(fecha,SE_DEBE_INGRESAR_LA_FECHA_CREACION);
         this.id = id;
         this.fecha = fecha;
         this.descripcion = descripcion;

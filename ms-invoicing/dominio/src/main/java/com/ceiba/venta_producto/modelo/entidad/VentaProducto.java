@@ -1,7 +1,6 @@
 package com.ceiba.venta_producto.modelo.entidad;
 
 
-import com.ceiba.factura.modelo.entidad.Factura;
 import com.ceiba.producto.modelo.entidad.Producto;
 import lombok.Getter;
 

@@ -15,7 +15,7 @@ import java.util.logging.Logger;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class UsuarioTest {
+class UsuarioTest {
 
     @Autowired
     Logger log= Logger.getGlobal();

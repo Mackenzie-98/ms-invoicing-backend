@@ -13,7 +13,8 @@ import java.util.List;
 
 public class ServicioCrearFactura {
 
-    private static final String LA_FACTURA_YA_EXISTE_EN_EL_SISTEMA = "El factura ya existe en el sistema";
+    private static final String LA_FACTURA_YA_EXISTE_EN_EL_SISTEMA = "La factura ya existe en el sistema";
+    public static final String DIA_NO_HABIL = "Día no hábil para realizar compras, intente más tarde.";
 
 
     private final RepositorioFactura repositorioFactura;
@@ -27,7 +28,7 @@ public class ServicioCrearFactura {
 
     public Long ejecutar(Factura factura) {
         validarExistenciaPrevia(factura);
-//        validarFinDeSemana(factura.getFecha());
+        validarFinDeSemana(factura.getFecha());
         List<VentaProducto> listaVenta = factura.getProductosVenta();
         Long id = this.repositorioFactura.crear(factura);
 
@@ -45,10 +46,10 @@ public class ServicioCrearFactura {
         }
     }
 
-//    private void validarFinDeSemana(LocalDateTime fecha){
-//        boolean esFinDeSemana = fecha.getDayOfWeek()== DayOfWeek.SATURDAY || fecha.getDayOfWeek()== DayOfWeek.SUNDAY;
-//        if(esFinDeSemana){
-//            throw  new ExcepcionDiaNoHabil("Día no hábil para realizar compras, intente más tarde.");
-//        }
-//    }
+    private void validarFinDeSemana(LocalDateTime fecha){
+        boolean esFinDeSemana = fecha.getDayOfWeek()== DayOfWeek.SATURDAY || fecha.getDayOfWeek()== DayOfWeek.SUNDAY;
+        if(esFinDeSemana){
+            throw  new ExcepcionDiaNoHabil(DIA_NO_HABIL);
+        }
+    }
 }

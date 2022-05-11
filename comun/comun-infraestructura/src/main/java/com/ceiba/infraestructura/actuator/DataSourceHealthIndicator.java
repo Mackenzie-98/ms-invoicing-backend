@@ -103,7 +103,7 @@ public class DataSourceHealthIndicator extends AbstractHealthIndicator implement
 		}
 	}
 
-	private void doDataSourceHealthCheck(Health.Builder builder) throws Exception {
+	private void doDataSourceHealthCheck(Health.Builder builder)  {
 		String product = getProduct();
 		builder.up().withDetail("database", product);
 		String validationQuery = getValidationQuery(product);
@@ -129,15 +129,15 @@ public class DataSourceHealthIndicator extends AbstractHealthIndicator implement
 	}
 
 	protected String getValidationQuery(String product) {
-		String query = this.query;
-		if (!StringUtils.hasText(query)) {
+		String consulta = this.query;
+		if (!StringUtils.hasText(consulta)) {
 			DatabaseDriver specific = DatabaseDriver.fromProductName(product);
-			query = specific.getValidationQuery();
+			consulta = specific.getValidationQuery();
 		}
-		if (!StringUtils.hasText(query)) {
-			query = DEFAULT_QUERY;
+		if (!StringUtils.hasText(consulta)) {
+			consulta = DEFAULT_QUERY;
 		}
-		return query;
+		return consulta;
 	}
 
 	/**
