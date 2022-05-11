@@ -11,6 +11,7 @@ import java.util.List;
 
 @Getter
 @AllArgsConstructor
+@NoArgsConstructor
 public class DtoFactura {
     private Long id;
     private LocalDateTime fecha;
