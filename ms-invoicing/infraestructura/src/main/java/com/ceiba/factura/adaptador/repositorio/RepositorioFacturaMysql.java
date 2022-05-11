@@ -2,7 +2,6 @@ package com.ceiba.factura.adaptador.repositorio;
 
 import com.ceiba.factura.modelo.entidad.Factura;
 import com.ceiba.factura.puerto.repositorio.RepositorioFactura;
-import com.ceiba.infraestructura.excepcion.ExcepcionTecnica;
 import com.ceiba.infraestructura.jdbc.CustomNamedParameterJdbcTemplate;
 import com.ceiba.infraestructura.jdbc.sqlstatement.SqlStatement;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;

@@ -1,6 +1,5 @@
 package com.ceiba.producto.adaptador.repositorio;
 
-import com.ceiba.infraestructura.excepcion.ExcepcionTecnica;
 import com.ceiba.infraestructura.jdbc.CustomNamedParameterJdbcTemplate;
 import com.ceiba.infraestructura.jdbc.sqlstatement.SqlStatement;
 import com.ceiba.producto.modelo.entidad.Producto;

@@ -61,7 +61,7 @@ pipeline {
 		}
 		success {
 			echo 'This will run only if successful'
-			junit 'ms-invoicing/build/jacoco/*.xml' //RUTA RELATIVA DE LOS ARCHIVOS .XML
+			junit 'ms-invoicing/infraestructura/build/jacoco/*.xml' //RUTA RELATIVA DE LOS ARCHIVOS .XML
 		}
 		failure {
 			echo 'This will run only if failed'
